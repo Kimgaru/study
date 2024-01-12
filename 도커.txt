@@ -1,0 +1,26 @@
+■도커 설치
+1.리눅스 버전을 자동으로 인식하여 도커 패키지를 설치해주는 스크립트
+sudo wget -qO- https://get.docker.com/ | sh
+
+2.이 스크립트로 도커를 설치하면 hello-world 이미지도 같이 설치되는데, 사용하지 않으므로 삭제
+sudo docker rm 'sudo docker ps -aq'
+sudo docker rmi hello-world
+
+■도커 실행전 설정 내용
+docker를 쓰다보면 sudo를 항상 붙여줘야 하는데 이는 docker 명령을 root 권한으로 실행해야 하기 때문에 일반 계정에서는 sudo가 항상 붙는 것이다. 
+매번 입력하기 귀찮고 빠뜨릴 때도 많다. sudo를 입력하지 않는 방법은 2가지이다.
+
+처음부터 root 계정으로 로그인하거나 root 계정으로 전환
+#root 계정으로 전환
+sudo su 
+
+#현재 계정을 docker 그룹에 포함
+sudo usermod -aG docker ${USER}
+sudo service docker restart
+
+
+■도커 이미지 생성
+
+
+
+■
