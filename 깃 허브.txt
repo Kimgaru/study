@@ -1,0 +1,27 @@
+■깃 허브 설치
+Git 다운로드 바로가기 : https://git-scm.com/download/
+
+■깃 허브 설정
+git config --global user.name "username"
+git config --global user.email "user-email"
+
+■폴더에서 Git 초기화
+git init
+
+■Github repo와 연결
+git remote add origin https://github.com/Kimgaru/study.git
+
+■원격 저장소에 추가
+git add .
+
+■커밋
+git commit -m "커밋 메세지"
+
+■원격 저장소의 변경사항을 확인
+git log
+
+■파일 업로드
+git push origin
+
+■파일 다운로드
+git pull origin
